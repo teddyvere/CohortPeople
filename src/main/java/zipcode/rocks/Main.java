@@ -12,7 +12,7 @@ public class Main {
     private static final String COMMA_DELIMITER = ",";
 
     public static void main(String[] args) {
-        String student_source = "FakeData.csv";
+        String student_source = "students.csv";
 
         // Load data file into an ArrayList<Person> of Person objects.
         Main programObject = new Main();
@@ -44,7 +44,7 @@ public class Main {
     private Person getRecordFromLine(String line) {
         // take the String of lastname,firstname and create a new Person object with it.
         String[] values = line.split(COMMA_DELIMITER);
-        Person newPerson = new Person(values[0], values[1]);
+        Person newPerson = new Person(values[0], values[1], values[2], values[3], values[4], values[5]);
         return newPerson;
     }
 
