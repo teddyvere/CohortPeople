@@ -8,7 +8,7 @@ public class Person {
     private String birthmonth;
     private Boolean pets;
 
-    public Person(String fname, String lname, String beverage, String color, String bmonth, String pets) {
+    /*public Person(String fname, String lname, String beverage, String color, String bmonth, String pets) {
         this.firstname = fname;
         this.lastname = lname;
         this.beverage = beverage;
@@ -16,12 +16,19 @@ public class Person {
         this.birthmonth = bmonth;
         this.pets =Boolean.valueOf(pets);
 
+    }*/
+
+    //version 2
+    public Person(String fname, String lname) {
+        this.firstname = fname;
+        this.lastname = lname;
     }
+    public
 
     //public Person(String firstname, String lastname, String beverage, String color, String birthmonth) {}
 
 
-    public String getFirstname() {
+    String getFirstname() {
         return firstname;
     }
 
